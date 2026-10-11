@@ -19,9 +19,9 @@ from ..engine.events import Event
 DEFAULT_PORT = 7428  # "KB" on a phone keypad-ish; arbitrary but memorable
 
 PAGE = b"""<!doctype html><meta charset=utf-8><title>Keebo</title>
-<style>body{margin:0;height:100vh;display:grid;place-items:center;background:#0b0a16;color:#8fe3c4;
+<style>body{margin:0;height:100vh;display:grid;place-items:center;background:#15122b;color:#c9a7ff;
 font:14px ui-monospace,monospace}img{width:384px;height:384px;image-rendering:pixelated;border-radius:18px;
-box-shadow:0 0 0 6px #1d1a33,0 20px 60px #000}p{opacity:.7;text-align:center}</style>
+box-shadow:0 0 0 6px #2a2450,0 20px 60px #000}p{opacity:.7;text-align:center}</style>
 <div><img id=k src=/now.gif><p id=s>keebo</p></div><script>
 let last='';async function poll(){try{const s=await (await fetch('/state')).json();
 document.getElementById('s').textContent=`${s.mood}  \xc2\xb7  LV ${s.level}  \xc2\xb7  ${s.xp} XP`;

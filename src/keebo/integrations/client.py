@@ -27,7 +27,7 @@ def project_name(cwd: Optional[str] = None) -> str:
     return Path(cwd).name
 
 
-def emit(kind: str, project: Optional[str] = None, data: Optional[dict] = None, timeout: float = 1.0) -> bool:
+def emit(kind: str, project: Optional[str] = None, data: Optional[dict] = None, timeout: float = 3.0) -> bool:
     body = json.dumps({"kind": kind, "project": project or project_name(), "data": data or {}}).encode()
     req = urllib.request.Request("http://127.0.0.1:%d/event" % port(), data=body,
                                  headers={"Content-Type": "application/json"})
