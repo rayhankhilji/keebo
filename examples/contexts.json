@@ -1,0 +1,6 @@
+[
+  {"scene": "music", "apps": ["Tidal", "Plexamp"]},
+  {"scene": "watching", "urls": ["crunchyroll.com/*"]},
+  {"scene": "coding", "urls": ["linear.app/*"], "titles": ["*pull request*"]},
+  {"scene": "duck", "titles": ["*debug*"]}
+]

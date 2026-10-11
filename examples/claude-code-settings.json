@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{"hooks": [{"type": "command", "command": "keebo emit agent_start --quiet"}]}],
+    "Stop": [{"hooks": [{"type": "command", "command": "keebo emit agent_done --quiet"}]}],
+    "PostToolUseFailure": [{"hooks": [{"type": "command", "command": "keebo emit confused --quiet"}]}]
+  }
+}

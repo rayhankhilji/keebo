@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start Keebo at login: copy to ~/Library/LaunchAgents/dev.keebo.plist, fix the path to `keebo`,
+     then: launchctl load ~/Library/LaunchAgents/dev.keebo.plist -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>dev.keebo</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/keebo</string>
+    <string>run</string>
+    <string>--display</string><string>aula</string>
+    <string>--display</string><string>file</string>
+  </array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardErrorPath</key><string>/tmp/keebo.log</string>
+</dict>
+</plist>
