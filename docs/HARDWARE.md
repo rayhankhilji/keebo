@@ -33,7 +33,7 @@ keebo run --display aula     # the live companion
 Upload sequence:
 
 1. `04 18`: begin.
-2. `04 72`: slot at byte 2 (`1`), chunk count as a little-endian u16 at bytes 8–9.
+2. `04 72`: slot at byte 2 (`1`), chunk count as a little-endian u16 at bytes 8 and 9.
 3. Each 4096-byte chunk goes out as an output report, followed by a wait of up to 350 ms for the ACK.
 4. `04 02`: commit. The screen only changes once this arrives.
 
@@ -42,7 +42,7 @@ For every command, Keebo waits about 35 ms, sends `SET_FEATURE`, waits about
 keyboard accepted the command.
 
 Payload: a 256-byte header (frame count in byte 0, then one delay byte per
-frame in 2 ms units, usable range about 30–510 ms), followed by
+frame in 2 ms units, usable range about 30 to 510 ms), followed by
 `frames × 128 × 128` pixels of little-endian RGB565, zero-padded to a
 multiple of 4096 bytes. The keyboard holds up to 255 frames.
 

@@ -19,21 +19,58 @@ and faceplant (then dust themselves off) when the build breaks.
 
 ## Meet Inky and Axo
 
-Keebo comes in two skins, and you can swap between them at any time with `keebo skin`:
+Keebo comes as two creatures, and you can swap between them whenever you like.
 
-- **Inky**, a small lilac octopus. All tentacles, all heart. Types with four arms at once.
-- **Axo**, a pink axolotl with frilly gills that wiggle when it's happy (which is most of the time).
+<table>
+<tr>
+<td align="center" width="50%"><img src="assets/gifs/inky/idle.gif" width="192" alt="Inky idling"><br><b>Inky</b><br><sub>A small lilac octopus. All tentacles, all heart.<br>Types with four arms at once.</sub></td>
+<td align="center" width="50%"><img src="assets/gifs/axo/idle.gif" width="192" alt="Axo idling"><br><b>Axo</b><br><sub>A pink axolotl whose frilly gills wiggle when it is happy,<br>which is most of the time.</sub></td>
+</tr>
+</table>
+
+```sh
+keebo skin axo     # switch to Axo
+keebo skin inky    # back to Inky (the default)
+```
+
+Your level, XP, unlocks and project history belong to you, not to the
+creature, so switching never resets anything.
 
 Both are drawn on a 64×64 grid and shown at exactly 2× on the keyboard's
-128×128 screen, so every pixel stays crisp. Neither is a pile of
-hand-pasted frames. Each is a **parametric rig**: squash and stretch,
-eyes, mouth, arms, tentacles or legs, gills, evolution form and
-accessories are all pose parameters. So every animation moves smoothly,
-and every one works for both creatures in every outfit they unlock.
+128×128 screen, so every pixel stays crisp. Neither is a pile of hand-pasted
+frames. Each one is a **parametric rig**: squash and stretch, eyes, mouth,
+arms, tentacles, gills, evolution form and accessories are all pose
+parameters. That is why every animation moves smoothly, and why every
+animation works for both creatures in every outfit they unlock.
 
-<div align="center">
-<img src="assets/brand/states.gif" alt="Inky's moods" width="49%"> <img src="assets/brand/states_axo.gif" alt="Axo's moods" width="49%">
-</div>
+## Every mood, both creatures
+
+Each pair below is the real 128×128 GIF that gets sent to the keyboard,
+with Inky on the left and Axo on the right.
+
+<table>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/idle.gif" width="96" alt="Inky idle"> <img src="assets/gifs/axo/idle.gif" width="96" alt="Axo idle"><br><b><code>idle</code></b><br><sub>breathing, blinking, glancing around</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/sleeping.gif" width="96" alt="Inky sleeping"> <img src="assets/gifs/axo/sleeping.gif" width="96" alt="Axo sleeping"><br><b><code>sleeping</code></b><br><sub>nightcap on, slow breaths, drifting Zzz</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/wake.gif" width="96" alt="Inky wake"> <img src="assets/gifs/axo/wake.gif" width="96" alt="Axo wake"><br><b><code>wake</code></b><br><sub>blinks awake, stretches, hops</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/thinking.gif" width="96" alt="Inky thinking"> <img src="assets/gifs/axo/thinking.gif" width="96" alt="Axo thinking"><br><b><code>thinking</code></b><br><sub>chin scratch, thought bubble, light bulb</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/building.gif" width="96" alt="Inky building"> <img src="assets/gifs/axo/building.gif" width="96" alt="Axo building"><br><b><code>building</code></b><br><sub>hard hat on, stacking bricks for your agent</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/testing.gif" width="96" alt="Inky testing"> <img src="assets/gifs/axo/testing.gif" width="96" alt="Axo testing"><br><b><code>testing</code></b><br><sub>frantic typing, sweat and speed lines</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/celebrating.gif" width="96" alt="Inky celebrating"> <img src="assets/gifs/axo/celebrating.gif" width="96" alt="Axo celebrating"><br><b><code>celebrating</code></b><br><sub>party hat, jumps and confetti</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/confused.gif" width="96" alt="Inky confused"> <img src="assets/gifs/axo/confused.gif" width="96" alt="Axo confused"><br><b><code>confused</code></b><br><sub>head tilts, question marks pop</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/frustrated.gif" width="96" alt="Inky frustrated"> <img src="assets/gifs/axo/frustrated.gif" width="96" alt="Axo frustrated"><br><b><code>frustrated</code></b><br><sub>stomping under a tiny storm cloud</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/failure.gif" width="96" alt="Inky failure"> <img src="assets/gifs/axo/failure.gif" width="96" alt="Axo failure"><br><b><code>failure</code></b><br><sub>collapses into a pancake while the build burns</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/recovery.gif" width="96" alt="Inky recovery"> <img src="assets/gifs/axo/recovery.gif" width="96" alt="Axo recovery"><br><b><code>recovery</code></b><br><sub>peels off the floor, bandage, thumbs up</sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/victory.gif" width="96" alt="Inky victory"> <img src="assets/gifs/axo/victory.gif" width="96" alt="Axo victory"><br><b><code>victory</code></b><br><sub>trophy held high in the spotlight</sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/evolving.gif" width="96" alt="Inky evolving"> <img src="assets/gifs/axo/evolving.gif" width="96" alt="Axo evolving"><br><b><code>evolving</code></b><br><sub>glows, flashes and grows into a new form</sub></td>
+</tr>
+</table>
 
 ## They react to your work
 
@@ -44,59 +81,84 @@ and every one works for both creatures in every outfit they unlock.
 | tests are running | types frantically, sweating, with speed lines | `testing` |
 | tests pass | party hat, jumps and confetti | `celebrating` |
 | tests fail | tilts its head, then stomps under a storm cloud | `confused` → `frustrated` |
-| the build fails | collapses into a pancake while the build catches fire... | `failure` |
-| ...and then | peels itself off the floor, slaps on a bandage, thumbs up | `recovery` |
+| the build fails | collapses into a pancake while the build catches fire | `failure` |
+| you fix it | peels itself off the floor, slaps on a bandage, thumbs up | `recovery` |
 | a task completes | raises a trophy in the spotlight | `victory` |
 | you level up | glows, flashes and evolves into its next form | `evolving` |
-| you go quiet for a while | puts on a nightcap and drifts off, *zzz* | `sleeping` |
+| you go quiet for a while | puts on a nightcap and drifts off | `sleeping` |
 | nothing in particular | breathes, blinks and glances around | `idle` |
 
-## They know what you're doing
+## They know what you are doing
 
-Keebo watches the frontmost app and the active browser tab, locally, using
-only macOS's built-in AppleScript, and acts out a matching mini-scene.
+Keebo checks the frontmost app and the active browser tab, locally, using
+nothing but macOS's built-in AppleScript, and acts out a matching mini-scene.
 
-<div align="center">
-<img src="assets/brand/scenes.gif" alt="Context scenes" width="640">
-</div>
+<table>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/coding.gif" width="96" alt="Inky coding"> <img src="assets/gifs/axo/coding.gif" width="96" alt="Axo coding"><br><b><code>coding</code></b><br><sub>typing on a mini MacBook<br><i>VS Code, Cursor, Xcode, JetBrains, Zed, GitHub, Claude, Devin</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/terminal.gif" width="96" alt="Inky terminal"> <img src="assets/gifs/axo/terminal.gif" width="96" alt="Axo terminal"><br><b><code>terminal</code></b><br><sub>shades on, green text scrolling<br><i>Terminal, iTerm2, Warp, Ghostty</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/writing.gif" width="96" alt="Inky writing"> <img src="assets/gifs/axo/writing.gif" width="96" alt="Axo writing"><br><b><code>writing</code></b><br><sub>writing a letter with a quill<br><i>Outlook, Mail, Google Docs, Word, Notion</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/watching.gif" width="96" alt="Inky watching"> <img src="assets/gifs/axo/watching.gif" width="96" alt="Axo watching"><br><b><code>watching</code></b><br><sub>munching popcorn in front of the TV<br><i>YouTube, Netflix, Twitch</i></sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/music.gif" width="96" alt="Inky music"> <img src="assets/gifs/axo/music.gif" width="96" alt="Axo music"><br><b><code>music</code></b><br><sub>headphones on, bopping<br><i>Spotify, Apple Music</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/chatting.gif" width="96" alt="Inky chatting"> <img src="assets/gifs/axo/chatting.gif" width="96" alt="Axo chatting"><br><b><code>chatting</code></b><br><sub>speech bubbles flying<br><i>Slack, Discord, Messages</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/meeting.gif" width="96" alt="Inky meeting"> <img src="assets/gifs/axo/meeting.gif" width="96" alt="Axo meeting"><br><b><code>meeting</code></b><br><sub>on camera in a bow tie<br><i>Zoom, Meet, Teams</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/designing.gif" width="96" alt="Inky designing"> <img src="assets/gifs/axo/designing.gif" width="96" alt="Axo designing"><br><b><code>designing</code></b><br><sub>painting at an easel<br><i>Figma, Photoshop, Aseprite</i></sub></td>
+</tr>
+<tr>
+<td align="center" width="25%"><img src="assets/gifs/inky/reading.gif" width="96" alt="Inky reading"> <img src="assets/gifs/axo/reading.gif" width="96" alt="Axo reading"><br><b><code>reading</code></b><br><sub>nose in a big book<br><i>Preview, Books, arXiv, PDFs</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/gaming.gif" width="96" alt="Inky gaming"> <img src="assets/gifs/axo/gaming.gif" width="96" alt="Axo gaming"><br><b><code>gaming</code></b><br><sub>mashing a gamepad<br><i>Steam, chess.com</i></sub></td>
+<td align="center" width="25%"><img src="assets/gifs/inky/browsing.gif" width="96" alt="Inky browsing"> <img src="assets/gifs/axo/browsing.gif" width="96" alt="Axo browsing"><br><b><code>browsing</code></b><br><sub>surfing the web, literally<br><i>any other browser tab</i></sub></td>
+</tr>
+</table>
 
-| You're in... | Scene |
-|---|---|
-| VS Code, Cursor, Xcode, JetBrains, Zed, GitHub, Devin, Claude... | `coding`: tapping away on a mini MacBook |
-| Terminal, iTerm2, Warp, Ghostty... | `terminal`: shades on, green text scrolling |
-| Outlook, Mail, Google Docs, Word, Notion... | `writing`: scribbling a letter with a quill |
-| YouTube, Netflix, Twitch... | `watching`: munching popcorn in front of the TV |
-| Spotify, Apple Music... | `music`: headphones on, bopping |
-| Slack, Discord, Messages... | `chatting`: speech bubbles flying |
-| Zoom, Meet, Teams... | `meeting`: on camera in a bow tie |
-| Figma, Photoshop, Aseprite... | `designing`: painting at an easel |
-| Preview, Books, arXiv, PDFs... | `reading`: nose in a big book |
-| Steam, chess.com... | `gaming`: mashing a gamepad |
-| any other browser tab | `browsing`: surfing the web, literally |
-
-You can add more apps and scenes with one line of JSON or with a plugin
-file ([see Extending](#extending)).
+Want more? One line of JSON or a tiny plugin file adds a new app or scene
+([see Extending](#extending)).
 
 ## They grow with you
 
 <div align="center">
-<img src="assets/brand/forms.png" alt="Baby → Buddy → Clicky → Mecha → Legend" width="640">
+<img src="assets/brand/forms.png" alt="Baby, Buddy, Clicky, Mecha and Legend forms for both creatures" width="760">
 </div>
 
-- **XP from finished work**: commits, green test runs, finished builds, completed agent tasks.
-- **Five forms**: Baby → Buddy (lv 3) → Clicky (lv 8, spots and RGB underglow) → Mecha (lv 15, visor and antenna) → Legend (lv 25, crown).
-- **Seventeen accessories** to unlock, from levels and from small achievements:
+- **XP from finished work.** Commits, green test runs, finished builds and completed agent tasks all count.
+- **Five forms.** Baby, then Buddy (level 3), Clicky (level 8, spots and RGB underglow), Mecha (level 15, visor and antenna) and finally Legend (level 25, crown and cape).
+- **Seventeen accessories** to unlock through levels and small achievements. Both creatures can wear all of them.
 
 <div align="center">
-<img src="assets/brand/wardrobe.png" alt="Accessories" width="640">
+<img src="assets/brand/wardrobe.png" alt="The accessory wardrobe on Inky and Axo" width="760">
 </div>
 
-- **Your projects become their history.** Each project you work on puts a
-  trophy on the shelf behind them: a cup, a star once you've shipped 10
+- **Your projects become their history.** Every project you work on puts a
+  trophy on the shelf behind them: a cup, a star once you have shipped ten
   tasks, or a battle flag for the hard-fought ones.
-- **They're kind.** XP never goes down. A failure followed by a fix earns a
-  *comeback* bonus (and the bandage). Taking a long break makes Keebo
-  *well rested*: 1.5× XP for an hour. Breaks are never punished.
+- **They are kind.** XP never goes down. A failure followed by a fix earns a
+  *comeback* bonus (and the bandage). A long break makes Keebo *well
+  rested*, worth 1.5× XP for an hour. Breaks are never punished.
+
+## See it live
+
+`keebo run` serves a pixel-perfect live preview at **http://127.0.0.1:7428**,
+so you can meet Keebo before the keyboard is even plugged in.
+
+<div align="center">
+<img src="assets/brand/preview.png" alt="The live preview page showing Axo celebrating at level 5" width="560">
+</div>
+
+`keebo status` shows how your companion is doing:
+
+```text
+$ keebo status
+Keebo (axo)  ·  Buddy  ·  level 5  ·  485 XP  (75% to next)
+mood: idle
+equipped: face=glasses
+unlocked: partyhat, hardhat, headphones, glasses, shades
+projects:
+  keebo                  15 XP    0 tasks  cup
+  builddit              275 XP    6 tasks  cup
+  widefive              195 XP    4 tasks  cup
+```
 
 ---
 
@@ -121,9 +183,8 @@ keebo device push celebrating  # one-off: put a clip on the screen
 keebo run --display aula       # the live companion
 ```
 
-`keebo run` also serves a live, pixel-perfect preview at
-**http://127.0.0.1:7428**, so you can try Keebo before plugging anything
-in. Run with no display flag, it only writes `~/.keebo/now.gif`.
+With no display flag, `keebo run` only writes `~/.keebo/now.gif` and serves
+the live preview page.
 
 > **Permissions.** The first time Keebo checks which app is in front, macOS
 > asks whether your terminal may control *System Events* (and your browser,
