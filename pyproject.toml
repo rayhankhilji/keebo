@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keebo"
+version = "0.1.0"
+description = "A pixel-art Tamagotchi that lives on your AULA F75 Max's 128x128 screen and reacts to your work."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Rayhan Khilji", email = "rayhankhilji@hotmail.com" }]
+requires-python = ">=3.9"
+dependencies = ["Pillow>=9", "numpy>=1.21"]
+keywords = ["aula", "f75", "keyboard", "pixel-art", "tamagotchi", "companion", "gif"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Games/Entertainment",
+]
+
+[project.optional-dependencies]
+hid = ["hidapi>=0.14"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+keebo = "keebo.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/rayhankhilji/keebo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E741"]
